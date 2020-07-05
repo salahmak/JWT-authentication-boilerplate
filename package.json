@@ -1,0 +1,35 @@
+{
+    "name": "authentication-boilerplate",
+    "version": "1.0.0",
+    "description": "a simple authentication boilerplate that uses JWT and mongodb",
+    "main": "server.js",
+    "scripts": {
+        "start": "nodemon --ignore './testing/' --exec node server.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/salahmak/JWT-authentication-boilerplate.git"
+    },
+    "keywords": [
+        "authentication",
+        "JWT",
+        "nodejs",
+        "mongodb"
+    ],
+    "author": "Salah Eddine Makdour",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/salahmak/JWT-authentication-boilerplate/issues"
+    },
+    "homepage": "https://github.com/salahmak/JWT-authentication-boilerplate#readme",
+    "dependencies": {
+        "@hapi/joi": "^17.1.1",
+        "bcrypt": "^5.0.0",
+        "dotenv": "^8.2.0",
+        "express": "^4.17.1",
+        "jsonwebtoken": "^8.5.1",
+        "mongodb": "^3.5.9",
+        "nanoid": "^3.1.10",
+        "nodemon": "^2.0.4"
+    }
+}
