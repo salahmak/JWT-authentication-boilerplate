@@ -12,7 +12,7 @@ const register = async (req, res, db) => {
 
     //validate the recieved data
     const { error } = validateRegister(req.body);
-    if (error) return res.status.json(error.details[0].message);
+    if (error) return res.status(400).json(error.details[0].message);
 
     try {
         //checking if the email exists before
